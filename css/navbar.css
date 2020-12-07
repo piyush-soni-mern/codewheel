@@ -1,0 +1,173 @@
+.mobile-menu{
+    display: none;
+}
+
+#logo{
+    display: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+}
+
+.nav_bar{
+    width: 100vw;
+}
+
+.navbar__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_bar .logo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 0.2rem solid #fff;
+    cursor: pointer;
+}
+
+.navitems{
+    background: #212529;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.5rem;
+    overflow: hidden;
+}
+
+.nav_list{
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+    transition: all 0.3s ease;
+}
+
+.nav_list li{
+    list-style-type: none;
+    margin: 0.5rem;
+}
+
+.nav_list li a{
+    text-decoration: none;
+    color: #ffffff80;
+    font-size: 2.1rem;
+    margin: 0.5rem;
+}
+
+.nav_list li a:hover{
+    color: #E9ECEF;
+}
+
+.sign{
+    margin-right: 4rem;
+}
+
+.sign a{
+    display: inline-block;
+    background-color: #DC3445;    
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.7rem;
+    margin: 0.4rem;
+    border-radius: 0.7rem;
+}
+
+.sign .login{
+    background: #4CAF50;
+    color: white;
+}
+
+.sign .login:hover{
+    background: #6afd70;
+    color: #000;
+}
+
+.sign .register:hover{
+    background: #e86270;
+    color: #000;
+}
+
+@media screen and (max-width: 998px){
+    html{
+        font-size: 55%;
+    }
+    .navbar__item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo{
+        display: inline;
+        margin-left: 0.5rem;
+    }
+
+    .logo{
+        margin-left: 2.5rem;
+    }
+
+    .mobile-menu{
+        margin-right: 2.5rem;
+        display: block;
+    }
+
+    .bar{
+        display: block;
+        cursor: pointer;
+        width: 2.5rem;
+        height: 0.3rem;
+        margin: 0.5rem auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .nav_list{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        display: none;
+        transition: all 0.3s ease;
+    }
+    .sign{
+        display: none;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .navitems{
+        flex-wrap: wrap;
+        transition: all 0.5s ease;
+        z-index: 1;
+        position: fixed;
+    }
+    .active{
+        display: flex;
+    }
+    .mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(0.8rem) rotate(45deg);
+    }
+    .mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-0.8rem) rotate(-45deg);
+    }
+
+    .nav_height{
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 45%;
+    }
+}

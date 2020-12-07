@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/***** Share Button *****/
+.share_btn{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.share_btn a{
+    width: 50px;
+    height: 50px;
+}
+
+
+/****** Navbar ******/
+
+.introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #E9ECEF;
+    overflow: hidden;
+}
+
+.introduction h1,h2{
+    color: #212529;
+    font-size: 4rem;
+}
+
+.introduction img{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+}
+
+.introduction h2{
+    font-size: 3.5rem;
+}
+
+.introduction .buttons{
+    display: inline;
+}
+
+.introduction .blog, .contactbtn{
+    display: inline-block;
+    text-decoration: none;
+    border: 0.2rem solid #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+.introduction .blog{
+    background-color: #d46018;
+}
+
+.introduction .contactbtn{
+    background-color: #0a5d88;
+}
+
+.introduction .blog:hover{
+    background-color: #ec7b35;
+}
+
+.introduction .contactbtn:hover{
+    background-color: #158dcc;
+}
+
+.introduction .socialLinks{
+    margin-top: 3rem;
+}
+
+.introduction .socialLinks img{
+    width:  5rem;
+    height: 5rem;
+    border: 0.2rem solid #fff;
+    margin-left: 0.5rem;
+}
+
+.socialLinks img:hover{
+    border: .4rem solid #8596fd;
+}
+
+/****** Courses Structure ********/
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+    padding-right: 2rem;
+}
+
+.row:first-child{
+    margin-top: 2rem;
+}
+
+.column{
+    margin: 0 2rem 2rem 0;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    border: 0.3rem solid #e4e4e4b6;
+}
+
+.column:hover{
+    transform: translateY(-2%);
+    box-shadow: 0.2rem 0.2rem 0.7rem 0.27rem rgba(0, 0, 0, 0.4);
+}
+
+.column img{
+    width: 30rem;
+    height: 18rem;
+}
+
+.column .learn{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0.5rem;
+}
+
+.column .learn p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.column .learn h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/******* Footer Design *********/
+
+.copy{
+    width: 100vw;
+    height: 7rem;
+    background-color: #212529;
+    color: #fff;
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+}
+
+/********* Blog Page Css **********/
+
+.blogs{
+    width: 70vw;
+    margin: auto;
+}
+
+.blog_div:hover{
+    transform: translateZ(2rem);
+    box-shadow: 0.2rem 0.2rem 0.7rem 0.27rem rgba(0, 0, 0, 0.4);
+}
+
+.blog_div{
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: #0a5d88;
+    border-radius: 0.5rem;
+    background-color: #1fa0e4;
+    color: #fff;
+}
+
+.title{
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+.title:hover{
+    text-decoration: underline;
+}
+
+.description{
+    margin-top: 0.4rem;
+    font-size: 2rem;
+}
+
+.read_more{
+    color: #0a5d88;
+    border: 0.2rem solid #0a5d88;
+    background: transparent;
+    margin-top: 1.4rem;
+    padding: 0.8rem;
+    font-weight: 600;
+}    
+
+.read_more:hover{
+    background: #0a5d88;
+    color: #fff;
+    border-color: #fff;
+    cursor: pointer;
+}
+
+.read_more:focus{
+   outline: none; 
+}
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.pagination button{
+    background: #d46018;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+.pagination button:hover{
+    background: #ec7b35;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination button:focus{
+    outline: none;
+    border: none;
+}
+
+
+/********* Contact Form CSS ******/
+.contact_form{
+    background-color: #E9ECEF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.contact_form h1{
+    font-size: 4rem;
+}
+
+.contact_form label{
+    font-size: 2.2rem;
+    display: block;
+}
+
+.contact input,textarea{
+    margin: 0.4rem 0;
+    width: 55rem;
+    border: 0.2rem solid #212529;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    resize: none;
+}
+
+.contact_form textarea{
+    height: 10rem;
+}
+
+.contact_form input:focus, textarea:focus{
+    outline: none;
+    border-color: #3498db;
+}
+
+.contact_form button{
+    border: none;
+    background: #d46018;
+    color: #fff;
+    padding: 1.2rem;
+    margin: 0.4rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+}
+
+.contact_form button:hover{
+    background: #ec7b35;
+    cursor: pointer;
+}
+
+.contact_form button:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 998px){
+    html{
+        font-size: 55%;
+    }
+    .introduction h1{
+        font-size: 3rem;
+    }
+    .introduction h2{
+        font-size: 2.2rem;
+    }
+    .row{
+       margin: 0 2rem;
+    }
+    .column{
+        margin: 2rem 0;
+    }
+    .column img{
+        width: 34rem;
+        height: 20rem;
+    }
+    .contact_form input,textarea{
+        width: 45rem;
+    }
+    .contact_form{
+        height: 100vh;
+    }
+    #copy{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 45%;
+    }
+}
